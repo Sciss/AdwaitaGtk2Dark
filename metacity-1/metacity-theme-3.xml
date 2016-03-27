@@ -10,22 +10,22 @@
 
 <!-- meaningfull constants -->
 
-<constant name="C_border_focused" value="blend/#000000/gtk:bg[NORMAL]/0.7" />
-<constant name="C_border_unfocused" value="blend/#000000/gtk:bg[NORMAL]/0.8" />
-<constant name="C_titlebar_focused_hilight" value="gtk:custom(wm_highlight,gtk:base[NORMAL])" />
-<constant name="C_titlebar_unfocused" value="blend/gtk:base[NORMAL]/gtk:bg[NORMAL]/0.4" />
-<constant name="C_title_focused" value="gtk:custom(wm_title,gtk:fg[NORMAL])" />
-<constant name="C_title_focused_hilight" value="gtk:custom(wm_borders_edge,gtk:base[NORMAL])" />
-<constant name="C_title_focused_hilight_dark" value="gtk:custom(wm_borders_edge,gtk:bg[NORMAL])" />
-<constant name="C_title_unfocused" value="gtk:custom(wm_unfocused_title,gtk:fg[INSENSITIVE])" />
+<constant name="C_border_focused" value="blend/#000000/#393f3f/0.7" />
+<constant name="C_border_unfocused" value="blend/#000000/#393f3f/0.8" />
+<constant name="C_titlebar_focused_hilight" value="rgba(0,0,0,0)" />
+<constant name="C_titlebar_unfocused" value="blend/#292929/#393f3f/0.4" />
+<constant name="C_title_focused" value="shade/#eeeeec/1.8" />
+<constant name="C_title_focused_hilight" value="rgba(238,238,236,0.1)" />
+<constant name="C_title_focused_hilight_dark" value="rgba(238,238,236,0.1)" />
+<constant name="C_title_unfocused" value="#939695" />
 <!-- color of the button icons -->
-<constant name="C_icons_focused" value="gtk:custom(wm_title,gtk:fg[NORMAL])" />
-<constant name="C_icons_pressed" value="gtk:custom(wm_title,gtk:fg[NORMAL])" />
-<constant name="C_icons_unfocused" value="gtk:custom(theme_unfocused_fg_color,gtk:fg[NORMAL])" />
-<constant name="C_icons_unfocused_prelight" value="gtk:custom(theme_unfocused_fg_color,gtk:fg[NORMAL])" />
-<constant name="C_icons_unfocused_pressed" value="gtk:custom(theme_unfocused_fg_color,gtk:fg[NORMAL])" />
-<constant name="C_icons_shadow" value="gtk:custom(wm_borders_edge,gtk:base[NORMAL])" />
-<constant name="C_separator" value="blend/#000000/gtk:bg[NORMAL]/0.9" />
+<constant name="C_icons_focused" value="shade/#eeeeec/1.8" />
+<constant name="C_icons_pressed" value="shade/#eeeeec/1.8" />
+<constant name="C_icons_unfocused" value="#939695" />
+<constant name="C_icons_unfocused_prelight" value="#939695" />
+<constant name="C_icons_unfocused_pressed" value="#939695" />
+<constant name="C_icons_shadow" value="rgba(238,238,236,0.1)" />
+<constant name="C_separator" value="blend/#000000/#393f3f/0.9" />
 <constant name="D_icons_unfocused_offset" value="0" /> <!-- offset of the unfocused icons -->
 <constant name="D_icons_shrink" value="3" /> <!-- increasing this value makes the icons in buttons smaller -->
 <constant name="D_icons_grow" value="0" /> <!-- increasing this value makes the icons in buttons bigger -->
@@ -160,7 +160,7 @@
 	<!-- window decorations -->
 
 <draw_ops name="entire_background_focused">
-	<rectangle color="gtk:bg[NORMAL]" x="0" y="0" width="width" height="height" filled="true" />
+	<rectangle color="#393f3f" x="0" y="0" width="width" height="height" filled="true" />
 </draw_ops>
 
 <draw_ops name="entire_background_unfocused">
@@ -169,8 +169,8 @@
 
 <draw_ops name="titlebar_fill_focused">
 	<gradient type="vertical" x="0" y="0" width="width" height="height">
-		<color value="gtk:custom(wm_bg_a,blend/gtk:bg[NORMAL]/gtk:base[NORMAL]/0.4)" />
-		<color value="gtk:custom(wm_bg_b,gtk:bg[NORMAL])" />
+		<color value="shade/#393f3f/1.2" />
+		<color value="#393f3f" />
 	</gradient>
 </draw_ops>
 
@@ -816,8 +816,8 @@
 
 	<!-- button backgrounds -->
 
-<constant name="C_button_border" value="blend/#000000/gtk:bg[NORMAL]/0.8" />
-<constant name="C_button_hilight" value="gtk:custom(wm_highlight,blend/gtk:base[NORMAL]/gtk:bg[NORMAL]/0.6)" />
+<constant name="C_button_border" value="blend/#000000/#393f3f/0.8" />
+<constant name="C_button_hilight" value="gtk:custom(transparent,blend/#292929/#393f3f/0.6)" />
 
 <draw_ops name="button_border">
   <line x1="6" y1="4" x2="width-7" y2="4" color="C_button_border" />
